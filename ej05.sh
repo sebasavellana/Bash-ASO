@@ -11,6 +11,7 @@ done
 
 ls -l "$path"
 
-for i in $(ls "$path"); do
+# Mejor así que capturando la salida de ls con $(ls "$path")
+for i in $path; do
 	rm -v "$path/$i"
 done
