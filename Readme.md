@@ -4,12 +4,17 @@ Ejercicios resueltos de Bash en el módulo de Administración de Sistemas Operat
 
 1.  El script `multiply.sh` contiene el siguiente código:
 
-    Si se ejecuta desde la terminal con los argumentos 4 y 3 de la
-    siguiente forma: `bash multiply.sh 4 3` debería mostrar en la salida
-    estándar `12`.
+```shell
+#!/bin/bash
+a=$1
+b=$2
+echo $((a*0))
+```
+Si se ejecuta desde la terminal con los argumentos 4 y 3 de la siguiente forma: `bash multiply.sh 4 3` debería mostrar en la salida
+estándar `12`.
 
-    Refactoriza el código de manera que devuelva dicha salida en una
-    sola linea:
+Refactoriza el código de manera que devuelva dicha salida en una
+sola linea:
 
 2.  Implementa un script en Bash que reciba por argumento dos strings y
     los compare para ver si son iguales o diferentes.
@@ -70,13 +75,9 @@ Ejercicios resueltos de Bash en el módulo de Administración de Sistemas Operat
 
     -   `"El host 192.168.4.12 no contesta"`
 
-    [PISTA:]{.ul} Para verificar si el ping ha sido satisfactorio o no
+    Para verificar si el ping ha sido satisfactorio o no
     utiliza códigos de retorno o la sintaxis\
-    `if mycommand; then ... fi`.
-
-    Con códigos de retorno:
-
-    Evaluando directamente el comando:
+    `if mycommand; then ... fi` evaluando directamente el comando.
 
 7.  Implementa un script en Bash donde recibirá por argumento una lista
     de usuarios de tamaño variable y no conocido de antemano e indicará
